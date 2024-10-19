@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <style> 
+    .one{
+        display: grid;
+       
+        grid-template-columns: 6% 13% 17% 28% 6% 8% 8% 6% 8%;
+    grid-row: 6%;
+    
+        background-color: rgb(233, 0, 0);
+    }
+    .item1{
+     
+     color: white;
+     background-color: black;
+     border: 2px solid rgb(0, 0, 0);
+         }
+         body{
+            background-color: black;
+         }
+         .h{
+width: 75vh;
+border-color: white;
+}
+.second{
+        
+        left: 6%;
+        position: fixed;
+
+    }
+    .button{
+      border-radius: 15%;
+      background-color: rgb(57, 57, 57);
+     
+      border: 2px solid #000000;
+     
+      color: rgb(255, 255, 255);
+      padding-right: 10px;
+      padding-left: 10px;
+      
+    }
+    button:hover{
+        background-color: rgb(189, 189, 189);
+        color: black;
+    }
+    .side {
+        border: 2px solid rgb(0, 0, 0);
+  top: 20%;
+  left: 0%;
+  width: 5%;
+  height: 80%;
+  position: fixed;
+  background: rgb(0, 0, 0);
+}
+.s{
+    border: 2px solid #000000;
+    width: 100%;
+    height: 10%;
+    font-size: 10px;
+    color: white;
+}
+#fullScreen {
+  position: fixed;
+  text-align: left;
+  left: 7%;
+  top: 20%;
+  width: 93%;
+  height: 80%;
+  z-index: 5;
+  background-color: #000000;
+  border: 4px solid #000000;
+  border-radius: 10px;
+  box-sizing:border-box;
+}
+#fullScreen::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#fullScreen{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#fullScreen{
+    overflow: scroll;
+ 
+}
+.grid{
+    display: grid;
+       
+       grid-template-columns: 33.33333333333333% 33.33333333333333% 33.33333333333333%;
+}
+.cell {
+  height: 500px;
+  width:100%;
+  background-color: #000000;
+  display: inline-block;
+}
+
+
+.circle{
+  width: 50px; /* Set the width and height to your desired size */
+      height: 50px;
+      background-color: #3c3e3f; /* Set the background color */
+      border-radius: 50%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="item1"><a href="tshortmenu.html"><img src="menu.svg" width="35px" height="35px" ></a></div>
+        <div class="item1">
+          <a href="ttube.html" style="color: white;"> <img src="youlogo.svg" alt="" width="40px" height="40px">YouTube <sup style="font-size: 10px;"><b>IN</b></sup></a>
+       </div>
+       <div class="item1"></div>
+       
+       <div class="item1"><input  type="text" class="topnav" placeholder="Search.. " style="font-size: 20px;height: 25px;width: 65%;" ><img src="search.svg" alt="" height="45px" width="45px"> </div>
+       
+       <div class="item1"><img src="mic1.svg" alt="" width="40px" height="40px"></div>
+       
+       <div class="item1"></div>
+       <div class="item1"><img src="video.svg" alt="" width="45px" height="45px"> </div>
+       <div class="item1"><img src="bell.svg" alt="" width="45PX" height="45px"></div> 
+       <div class="item1">
+           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: black;border-color: black;width: 40px;">
+              <img src="profile.svg" alt="" width="35px" height="100%" ></button>
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel"><img src="bprofile.svg" alt="" width="75px" height="75px" style="float: left;font-size: 10px;color: black;">username @username <br>view your channel <hr></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                     <button class="h"> <a href="https://www.google.com/account/about/?hl=en-GB" style="color: black;"><img src="g (2).svg" alt="" width="35px" height="35px">Google Account </a></button><br>
+                     <button class="h"> <img src="bpro.svg" alt="" width="35px" height="35px">Switch Account</button><br>
+                     <button class="h"> <img src="logout.svg" alt="" width="35px" height="35px">Sign Out </button><br>
+                     <hr>
+                     <button class="h"> <img src="youstudio.svg" alt="" width="35px" height="35px">YouTube Studio</button><br>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+     
+    </div>
+
+    <div class="second">
+        <table>
+            <tr>
+          <td>  <button class="button">All</button></td>
+          <td><button class="button">Music</button></td>
+        </tr>
+        </table>
+      
+     </div>
+     <div class="side">
+        <section>
+        <a href="ttube.html"><div class="s"><center><img src="home.svg" alt="" width="30px" height="30px"><br>Home</center> </div></a><br> 
+        <a href="tshorts.html"><div class="s"><center><img src="short.svg" alt="" width="30px" height="30px"><br>Shorts </center></div></a><br>
+        <div class="s"><center> <img src="sub.svg" alt="" width="30px" height="30px">  <br>Subscriptions</center></div><br>
+        <a href="tyou.html"><div class="s"><center><img src="squareplay.svg" alt="" width="30px" height="30px"><br>You</center></div></a><br>
+        
+        </section>
+    </div>
+     
+
+    <div id="fullScreen">
+        <div class="grid">
+            <div class="cell"></div>
+            <div class="cell"><video width="100%" height="100%" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video></div>
+            <div class="cell" style="top: 5%; left: 5%;color: white;"><button class="circle"><img src="like (2).svg" alt=""  width="30px" height="30px" ></button>100k <br><br><br><button class="circle"><img src="dislike.svg" alt="" width="30px" height="30px"></button>dislike <br><br><br><button class="circle"><img src="msg.svg" alt="" width="30px" height="30px"></button>5.1k <br><br><br><button class="circle"><img src="forward.svg" alt="" width="30px" height="30px"></button>share <br><br><br><button class="circle"><img src="dot.svg" alt="" width="30px" height="30px"></button></div>
+            <div class="cell"></div>
+            <div class="cell"><video width="100%" height="100%" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video></div>
+            <div class="cell" style="top: 5%; left: 5%;color: white;"><button class="circle"><img src="like (2).svg" alt=""  width="30px" height="30px" ></button>100k <br><br><br><button class="circle"><img src="dislike.svg" alt="" width="30px" height="30px"></button>dislike <br><br><br><button class="circle"><img src="msg.svg" alt="" width="30px" height="30px"></button>5.1k <br><br><br><button class="circle"><img src="forward.svg" alt="" width="30px" height="30px"></button>share <br><br><br><button class="circle"><img src="dot.svg" alt="" width="30px" height="30px"></button></div>
+            <div class="cell"></div>
+            <div class="cell"><video width="100%" height="100%" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video></div>
+            <div class="cell" style="top: 5%; left: 5%;color: white;"><button class="circle"><img src="like (2).svg" alt=""  width="30px" height="30px" ></button>100k <br><br><br><button class="circle"><img src="dislike.svg" alt="" width="30px" height="30px"></button>dislike <br><br><br><button class="circle"><img src="msg.svg" alt="" width="30px" height="30px"></button>5.1k <br><br><br><button class="circle"><img src="forward.svg" alt="" width="30px" height="30px"></button>share <br><br><br><button class="circle"><img src="dot.svg" alt="" width="30px" height="30px"></button></div>
+            <div class="cell"></div>
+            <div class="cell"><video width="100%" height="100%" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video></div>
+            <div class="cell" style="top: 5%; left: 5%;color: white;"><button class="circle"><img src="like (2).svg" alt=""  width="30px" height="30px" ></button>100k <br><br><br><button class="circle"><img src="dislike.svg" alt="" width="30px" height="30px"></button>dislike <br><br><br><button class="circle"><img src="msg.svg" alt="" width="30px" height="30px"></button>5.1k <br><br><br><button class="circle"><img src="forward.svg" alt="" width="30px" height="30px"></button>share <br><br><br><button class="circle"><img src="dot.svg" alt="" width="30px" height="30px"></button></div>
+           
+    </div>
+   
+</body>
+</html>
